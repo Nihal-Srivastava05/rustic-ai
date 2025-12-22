@@ -64,5 +64,5 @@ class VertexAIBase:
             aiplatform.init(project=project_id, location=location)
             self._is_vertexai_initialized = True
             self.genai_client = genai.Client(
-                vertexai=True, project=project_id, location=location, http_options=types.HttpOptions(api_version="v1")
+                vertexai=True, project=project_id, location=location, http_options=types.HttpOptions(api_version="v1beta")
             )
